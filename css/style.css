@@ -25,7 +25,7 @@
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-  padding: 112px 8px 0;
+  padding: 96px 8px 0;
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
@@ -278,7 +278,10 @@ form {
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.gumroad-product-embed { color: #979797!important; }
+.gumroad-product-embed {
+  color: #979797!important;
+  margin-top: 24px;
+}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
