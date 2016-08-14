@@ -1,0 +1,298 @@
+/* Accessible text colour */
+body { color: #4d4d4d!important; }
+
+/* Remove body bg */
+#product_page,
+.product .product-main { background: none!important; padding: 32px; }
+
+/* .product-content {padding-bottom: 32px!important; } */
+
+/* Remove card padding */
+.product-main .product-information { padding: 0!important; }
+
+/* Remove odd unhelpful wrapper padding.
+ * We want to handle spacing in the website. */
+#product_page .wrapper .product-row { margin: 0!important; }
+.new-york .wrapper .product {
+    max-width: 420px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 3px!important;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2)!important;
+}
+
+.product-main .product-information h1 { margin-bottom: 16px; }
+.product-description { margin-bottom: 4px; }
+
+/* Remove borders */
+.new-york .wrapper .product, 
+.new-york .product-display .product, 
+.new-york .selected-product-wrapper .product { border: none; }
+
+/* Remove header banner*/
+.preview-container.default-preview { display: none; }
+
+/* Layout the product-price-tag a little better */
+
+.new-york .wrapper .product-price-tag {
+  display: block;
+  position: static;
+  text-align: center;
+  border-top-left-radius: 3px!important;
+  border-top-right-radius: 3px!important;
+  background-color: #458FEC!important;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2)!important;
+}
+
+
+.js-file-info-attributes-list { padding-bottom: 16px; }
+
+/* Remove fucking Georgia. */
+.new-york .wrapper label,
+.new-york .wrapper p,
+.new-york .product-display label,
+.new-york .product-display p,
+.new-york .selected-product-wrapper label,
+.new-york .selected-product-wrapper p { font-family: inherit; }
+
+/* Remove vertical divider because we won't do
+ * a columnar layout anymore */
+.product-main .product-information.two-column .description-container:after { display: none; }
+
+/* Layout in rows for better mobile design */
+.description-container, .want-container {
+  float: none!important;
+  width: 100%!important;
+  padding: 0!important;
+}
+  /* Flip order of elements with flex */
+.want-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Remove styles on the info box */
+.product-main .product-information .product-info {
+  margin: 0;
+  border: none;
+}
+
+/* Remove odd border on h5 */
+.product-info h5, .billing-options-list h5 {
+  border: none!important;
+  padding: 0;
+  text-transform: initial;
+  color: #797979!important;
+}
+.product-main .product-info .summary { 
+  font-size: 12px;
+  min-height: 0;
+  padding: 0 0 8px!important;
+  line-height: 14px;
+  margin: 0; }
+
+.product-info-preorder-indicator {
+  padding: 8px 16px!important;
+  border-radius: 3px!important;
+  background-color: #f5f5f5;
+  color: #5a5a5a;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+/* BUY BUTTON */
+.new-york [data-custom-highlight-color] {
+  color: white;
+  background-color: #458FEC!important;
+  border: none!important;
+  padding: 16px 18px;
+  border-radius: 3px!important;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2)!important;
+}
+.new-york [data-custom-highlight-color]:hover {
+  background-color: #166cd7!important;
+}
+
+.want-container .already-bought-notice {
+  background: none!important;
+  border: none!important; 
+}
+
+.product-info li, .billing-options-list li { border: none!important; padding: 0 0 8px!important; }
+.product-main .product-info li span, .product-main .product-info li strong { font-size: 12px; line-height: 14px; width: auto; color: #979797; display: inline-block; float:left; padding: 0; text-align: left; }
+.product-main .product-info li strong { padding-left: 8px; color: #4d4d4d; font-weight: bold; }
+
+/*******************************
+*  CARD UI
+********************************/
+.product { overflow: visible; }
+.new-york .wrapper .buy-form-main[style] { height: auto!important; overflow: visible;  }
+/* Remove borders on card UI */
+.new-york .wrapper .buy-form-main .envelope,
+.new-york .product-display .buy-form-main .envelope,
+.new-york .selected-product-wrapper .buy-form-main .envelope {
+ border: none!important; 
+ padding: 0!important;
+}
+.envelope .relative { padding: 0!important; }
+.envelope .offer-code-p { padding: 16px 0!important; }
+
+.envelope p input[type=text],
+.envelope p input[type=email],
+.envelope p input[type=password],
+.envelope p textarea,
+.envelope p select {
+  border-radius: 2px!important;
+  color: #4d4d4d!important;
+}
+.envelope p input[type=text]:focus,
+.envelope p input[type=email]:focus,
+.envelope p input[type=password]:focus,
+.envelope p textarea:focus,
+.envelope p select:focus {
+  border-color: #458FEC!important;
+}
+
+.new-york .payment-container {
+ /* background: #fff; */
+  padding: 16px 32px 32px;
+  max-width: none;
+  width: auto!important;
+/*  border-radius: 4px!important;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15)!important; */
+}
+.new-york .wrapper .buy-form-main { background: none!important; }
+
+.buy-form-main .credit_card {
+  background-color: #4085E5!important;
+  border: none!important;
+  border-radius: 8px!important;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2)!important;
+}
+.credit_card_holder {margin-bottom: 40px!important; }
+.credit_card_holder .credit_card .stripe-card-info { background: rgba(0,0,0,.3); color: white;}
+
+.credit_card_holder .credit_card .preset_cc_number { text-shadow: none!important; color: white; }
+.credit_card_holder .credit_card label { font-size: 10px; font-weight: bold; color: rgba(255,255,255,.5); }
+.credit_card_holder .credit_card .preset_cc_input { color: white!important; text-shadow: none; font-weight: bold; }
+.payment-blurb, .payment-blurb strong { font-weight: bold; }
+
+.js-full-name-input {height: 35px!important;}
+.credit_card_holder .credit_card input[type=tel],
+.credit_card_holder .credit_card input[type=text],
+.credit_card_holder .credit_card input[type=number] {
+  border: none!important;
+  border-radius: 3px!important;
+  color: #4d4d4d!important;
+}
+/*******************************
+*  RECEIPT
+********************************/
+.receipt_container .receipt_hole,
+.receipt_shadow {
+ display: none;
+}
+
+.receipt {
+  position: static;
+  padding: 0;
+  display: block;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.receipt h4 {
+  font-size: 16px;
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: bold;
+}
+.receipt .receipt-entry:last-child { border: none!important; }
+.receipt .receipt-entry .receipt-price {
+ float: none;
+ width: 100%;}
+
+.receipt .receipt-entry .product-details {
+  border: none!important; 
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.receipt .receipt-entry .product-details p { margin-top: 8px; }
+
+button.button-default, .button.button-default {
+  border-radius: 3px!important;
+  font-weight: bold; 
+}
+button.button-small, .button.button-small { padding: 8px 12px; }
+
+.receipt .receipt-entry .button {
+  background-color: #458FEC;
+  color: white;
+  border: none; 
+  padding: 12px 24px;
+  margin: 16px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2)!important;
+  transition: background-color, box-shadow .2s ease-out;
+-webkit-transition: all .2s ease-out!important;
+}
+.receipt .receipt-entry .button:hover {
+  background-color: #166cd7;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2)!important;
+}
+
+.receipt p { font-size: 14px; line-height: 20px!important; color: #5a5a5a; }
+
+.js-receipt-custom-text { padding: 16px 0; }
+.js-receipt-custom-text p { font-size: 16px; color: #4d4d4d; font-weight: bold; }
+
+.receipt_bottom { display: none; }
+
+button.button-small .gi, .button.button-small .gi { height: 100%!important; }
+button.button-small .gi:before,
+.button.button-small .gi:before {top: 3px; position: relative;}
+.button.button-small.button-w-i {border-radius: 3px!important; box-shadow: 0 1px 3px rgba(0,0,0,.2)!important; }
+
+
+/* Remove transitions */
+#product_page .wrapper, #user_page .wrapper {transition: none!important; -webkit-transition: none!important;}
+
+
+.product .buy-form-main .changed_mind_button { 
+  border-radius: 50%!important;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,.1)!important;
+  width: 28px;
+  height: 28px;
+  float: none;
+  display: none;
+
+}
+
+form.email-receipt-form {
+  padding: 16px 0!important;
+  border-top: 1px solid #ededed
+  margin: 16px 0;
+  text-align: left;
+
+}
+
+.credit_card_holder .credit_card .stripe-card-info .or-pay-with { color: rgba(255,255,255,.6);}
+
+.credit_card_holder .credit_card .stripe-card-info .paypal {
+  border-radius: 3px!important;
+  border: none!important;
+  background-color: rgba(255,255,255,.85)!important;
+}
+.credit_card_holder .credit_card .stripe-card-info .paypal:hover {background-color: rgba(255,255,255,.96)!important;}
+
+
+p.receipt_create_user_p { font-size: 12px; color: #797979; }
+
+
+.flash-message .message { background-color: rgba(255,255,255,.96); } 
