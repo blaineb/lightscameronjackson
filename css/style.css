@@ -294,7 +294,7 @@ form {
   width: 100%;
   box-sizing: border-box;
 }
-
+.preload-faker img { max-width: 100%; height: auto; border: 0; margin: 0; padding: 0; }
 @media (min-width: 680px) {
   .preload-faker .want-container {
     width: 39%;
