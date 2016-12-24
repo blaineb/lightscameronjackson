@@ -291,6 +291,8 @@ form {
 }
 .preload-faker .content {
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 680px) {
@@ -310,6 +312,7 @@ form {
   font-size: 17px;
   color: white;
   text-decoration: none;
+  box-sizing: border-box;
 }
 .preload-faker .price-preview {
     font-size: 18px;
