@@ -299,6 +299,8 @@ form {
   .preload-faker .want-container {
     width: 39%;
     float: right;
+    padding-left: 20px;
+    box-sizing: border-box;
   }
 }
 .preload-faker .buy-button {
@@ -313,6 +315,8 @@ form {
   color: white;
   text-decoration: none;
   box-sizing: border-box;
+  height: 42px;
+  line-height: 100%;
 }
 .preload-faker .price-preview {
     font-size: 18px;
